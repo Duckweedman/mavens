@@ -8,3 +8,5 @@ git连接远程仓库，一些工具类和常用项目框架
 数据缓存：核心是框架支持的Observable.concat（三级缓存）,外层添加CacheManager管理类
 请求拦截：在Zygote中添加拦截器即可
 优化：主要是一些泛化处理和生命周期关联
+###使用
+AppCall-Zygote—Apiservice作为调用流程，绑定View的操作，看MainActivity示例，创建一个Base类继承RxFragmentActivity或RxFragment
