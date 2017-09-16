@@ -6,8 +6,6 @@ import android.view.View;
 
 import com.example.rxdemo.R;
 import com.example.rxdemo.base.BaseActivity;
-import com.example.rxdemo.permission.PermissionCallback;
-import com.example.rxdemo.permission.PermissionManager;
 
 import butterknife.OnClick;
 
