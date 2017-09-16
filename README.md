@@ -1,6 +1,7 @@
 # mavens
-git连接远程仓库，一些工具类和常用项目框架
+一些工具类和常用项目框架
 #NetDemo库
+需要完善和优化的地方有很多，欢迎大家给出建议和改善，谢谢了
 背景和限制：近年来RxJava+retrofit网络访问框架算是比较主流的了，这里做一些总结，NetDemo库只针对single module或少module的项目环境，如果项目做组件化开发，需要对Zygote做泛化处理
 思路：RxJava作为统一调用链，在整条链中，我们需要做这几件事：数据传输、数据过滤、数据缓存、请求拦截和优化
 数据传输：这里新建一个BaseBean作为数据的基本结构，声明服务器公共字段，在Zygote中，添加header信息，包括token、companyId等
