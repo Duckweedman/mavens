@@ -1,1 +1,1 @@
-include ':app', ':rxdemo', ':NetDemo'
+include ':app', ':rxdemo', ':NetDemo', ':jnidemo'
