@@ -52,6 +52,8 @@ public class Zygote {
             .baseUrl(BASE_APP_API)
             //添加gson转换器
             .addConverterFactory(GsonConverterFactory.create())
+            //TODO:meiyizhi 当需要加密时，使用下面的转换器
+//            .addConverterFactory(MyGsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .client(httpClient)
             .build()
