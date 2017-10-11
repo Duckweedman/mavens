@@ -11,3 +11,17 @@
 优化：主要是一些泛化处理和生命周期关联
 ###使用
 AppCall-Zygote—Apiservice作为调用流程，绑定View的操作，看MainActivity示例，创建一个Base类继承RxFragmentActivity或RxFragment
+
+###jniDemo库
+从事Android以来，jni使用场景少了（项目使然），温故知新，对jni调用流程熟悉一遍也挺好的
+Android studio集成jni四步：
+第一步：新建native的java类
+第二步：使用javah -classpath xxx -jni 全类名  生成.h文件、新建jni文件夹，并把.h文件复制进去
+第三步：修改module的build.gradle 添加ndk过滤
+ndk{
+            moduleName "jnitestlib"         //生成的so名字
+            abiFilters "armeabi", "armeabi-v7a", "x86"  //输出指定三种abi体系结构下的so库。目前可有可无。
+        }
+第四步：在工程的gradle.properties文件中添加语句：
+android.useDeprecatedNdk=true
+###
