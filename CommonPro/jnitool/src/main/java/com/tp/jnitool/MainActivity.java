@@ -1,4 +1,4 @@
-package com.taipu.jnitool;
+package com.tp.jnitool;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
